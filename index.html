@@ -32,7 +32,7 @@
                             <a class="nav-link" href="#about"><i class="fas fa-fingerprint"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-code"></i> Projects</a>
+                            <a class="nav-link" href="#projects"><i class="fas fa-code"></i> Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-paper-plane"></i> Contact</a>
@@ -61,10 +61,10 @@
                 </div>
             </div>
         </div>
-        <div class="container">
+        <div class="container" id="about">
             <h2>About me</h2>
         </div>
-        <div class="container" id="about">
+        <div class="container">
             <div class="col-md-4">
                 <div class="card text-center" style="width: 18rem;">
                     <span style="font-size: 4em; padding-top: 20px;" class="custom-icon">
@@ -102,6 +102,158 @@
                 </div>
             </div>
         </div>
+        <div class="container" style="padding-top: 50px;" id="projects">
+            <div class="col-md-12 offset-md-1" style="margin-left: 0px;">
+                <div class="col-md-12" id="projects">
+                    <h2>Projects</h2>
+                </div>
+                <div class="row">
+
+                    <!-- Gallery Item Loop  -->
+
+                    <div onclick="changeActiveState(1)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <div class="gallery-container">
+                            <img src="https://www.ravenshoegroup.com/concept/codepen/gallery1.jpg" alt="Alt Name"
+                                class="image">
+
+                            <div class="overlay">
+                                <p class="text p-2">
+                                    <span>Gallery Title</span><br>
+                                    <span class="small">Gallery Sub Title</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!--  End  -->
+
+
+                    <div onclick="changeActiveState(2)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <div class="gallery-container">
+                            <img src="https://www.ravenshoegroup.com/concept/codepen/gallery2.jpg" alt="Alt Name"
+                                class="image">
+
+                            <div class="overlay">
+                                <p class="text p-2">
+                                    <span>Gallery Title 2</span><br>
+                                    <span class="small">Gallery Sub Title 2</span>
+                                </p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div onclick="changeActiveState(3)" class="col-md-6 col-lg-4 py-4" data-toggle="modal"
+                        data-target="#exampleModal">
+                        <div class="gallery-container">
+                            <img src="https://www.ravenshoegroup.com/concept/codepen/gallery3.jpg" alt="Alt Name"
+                                class="image">
+
+                            <div class="overlay">
+                                <p class="text p-2">
+                                    <span>Gallery Title 3</span><br>
+                                    <span class="small">Gallery Sub Title 3</span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+
+                    <!-- MODAL -->
+                    <div class="modal fadeIn" id="exampleModal" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+
+                            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-ride="carousel"
+                                data-interval="false">
+                                <div class="carousel-inner">
+
+                                    <!--  Item 1  -->
+                                    <div class="carousel-item active" id="carousel-1">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Gallery Title</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="https://www.ravenshoegroup.com/concept/codepen/gallery1.jpg"
+                                                    id="currentImg-1" Title="" alt="Alt Name" class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 1 End  -->
+
+                                    <!--  Item 2 Loop  -->
+                                    <div class="carousel-item" id="carousel-2">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Gallery Title 2</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="https://www.ravenshoegroup.com/concept/codepen/gallery2.jpg"
+                                                    id="currentImg-2" alt="Alt Name" class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 2 End  -->
+
+                                    <!--  Item 3 Loop  -->
+                                    <div class="carousel-item" id="carousel-3">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Gallery Title 3</h5>
+                                                <button type="button" class="close" data-dismiss="modal"
+                                                    aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+
+                                            <div class="modal-body">
+                                                <img src="https://www.ravenshoegroup.com/concept/codepen/gallery3.jpg"
+                                                    id="currentImg-3" alt="Alt Name" class="image">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Item 3 End  -->
+
+
+                                </div>
+                            </div><!-- Carousel End -->
+
+                        </div>
+
+                        <!-- Prev Next Arrows -->
+                        <a href="#carouselExampleFade" role="button" data-slide="prev" class="carousel-control-prev">
+                            <div class="arrow-left d-flex align-items-center text-center" href="#carouselExampleFade"
+                                role="button" data-slide="prev"><img
+                                    src="https://www.ravenshoegroup.com/concept/codepen/arrow-left.png" width="20px"
+                                    alt="Left Arrow"></div>
+                        </a>
+                        <a href="#carouselExampleFade" role="button" data-slide="prev" class="carousel-control-next">
+                            <div class="arrow-right d-flex align-items-center text-center" href="#carouselExampleFade"
+                                role="button" data-slide="next"><img
+                                    src="https://www.ravenshoegroup.com/concept/codepen/arrow-right.png" width="20px"
+                                    alt="Right Arrow"></div>
+                        </a>
+                        <!--  Arrows End   -->
+
+                    </div>
+                    <!-- Modal End  -->
+
+            </div>
     </main>
 
     <footer>
