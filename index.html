@@ -9,18 +9,17 @@
     <link rel="stylesheet" href="./Content/app.css">
     <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <!-- Main Navigation -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark py-4" data-toggle="affix">
+        <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-4 " id="custom-nav">
             <div class="container">
-                <a class="navbar-brand" href="#">
-                    <img src="/docs/4.5/assets/brand/bootstrap-solid.svg" width="30" height="30"
-                        class="d-inline-block align-top" alt="" loading="lazy">
-                    Bootstrap
-                </a>
+                <a class="navbar-brand" href="index.html">
+                    <img src="./Assets/img/logo.svg" width="30" height="40" class="d-inline-block align-top" alt=""
+                        loading="lazy" style="margin-right: 10px;"></a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -30,10 +29,10 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-user-check"></i> About</a>
+                            <a class="nav-link" href="#"><i class="fas fa-fingerprint"></i> About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#"><i class="fas fa-fill-drip"></i> Projects</a>
+                            <a class="nav-link" href="#"><i class="fas fa-code"></i> Projects</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#"><i class="fas fa-paper-plane"></i> Contact</a>
@@ -45,32 +44,53 @@
     </header>
 
     <main>
-        <div class="container">
-            <div class="jumbotron">
-                <h2>Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                    WorldHello World</h2>
-                    <h2>Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                        WorldHello World</h2>
-                        <h2>Hello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello WorldHello
-                            WorldHello World</h2>
+        <div class="jumbotron" id="custom-jumbo">
+            <div class="container">
+                <div class="col-md-8">
+                    <h1 style="padding-top: 30px; color: white; font-size: 50px; font-weight: bold;">Hello World!
+                    </h1>
+                    <p class="lead" style="color: white;">My name is Fatih Erol. A brand new father, devoted husband,
+                        graphic designer, developer
+                        candidate, audiophile, nature lover</p>
+                    <hr class="my-4">
+                    <p style="color: white;">Would you like to learn more about me?</p>
+                    <a class="btn btn-primary btn-m" href="#about" role="button">learn more</a>
+                </div>
+                <div class="col-md-4">
+                    <img src="./Assets/img/profile.png" height="320px">
+                </div>
+            </div>
+        </div>
+
+        <div class="container" id="about">
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./Assets/img/baby.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><span style="font-weight: bold;">A brand new father</span></h5>
+                        <p class="card-text">It is the most beautiful thing ever happened to me. Also the hardest task.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./Assets/img/baby.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><span style="font-weight: bold;">Graphic designer</span></h5>
+                        <p class="card-text">I am a graphic designer for more than a decade. Still learning and sharing the experience.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="./Assets/img/baby.jpg" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title"><span style="font-weight: bold;">Developer candidate</span></h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
