@@ -1,3 +1,9 @@
+/* 
+File name : app.js v1.0
+Author : Fatih Erol
+Website : https://fatiheroltr.github.io/portfolio-assignment/
+Description : Mini portfolio project
+*/
 
 let jumbo1="Hi there!";
 document.getElementById("jumbo-1").innerHTML = jumbo1;
