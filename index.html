@@ -30,13 +30,13 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-fingerprint"></i> About</a>
+                            <a class="nav-link" href="#about"><i class="fas fa-fingerprint"></i><span id="menu-1"></span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#projects"><i class="fas fa-code"></i> Projects</a>
+                            <a class="nav-link" href="#projects"><i class="fas fa-code"></i><span id="menu-2"></span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact"><i class="fas fa-paper-plane"></i> Contact</a>
+                            <a class="nav-link" href="#contact"><i class="fas fa-paper-plane"></i><span id="menu-3"></span></a>
                         </li>
                     </ul>
                 </div>
@@ -48,13 +48,11 @@
         <div class="jumbotron" id="custom-jumbo">
             <div class="container">
                 <div class="col-md-8">
-                    <h1 class="display-4 " style="padding-top: 30px; color: white; font-weight: bold;">Hello World!
+                    <h1 class="display-4 " style="padding-top: 30px; color: white; font-weight: bold;"><span id="jumbo-1"></span>
                     </h1>
-                    <p class="lead" style="color: white;">My name is Fatih Erol. A brand new father, devoted husband,
-                        graphic designer, developer
-                        candidate, audiophile, nature lover</p>
+                    <p class="lead" style="color: white;"><span id="jumbo-2"></span></p>
                     <hr class="my-4">
-                    <p style="color: white;">Would you like to learn more about me?</p>
+                    <p style="color: white;"><span id="jumbo-3"></span></p>
                     <a class="btn btn-primary btn-m" href="#about" role="button">learn more</a>
                 </div>
                 <div class="col-md-4">
@@ -67,7 +65,7 @@
         <a class="anchor" id="about"></a>
         <div class="container" style="padding-top: 50px;">
             <div class="col-md-12">
-                <h2>About me</h2>
+                <h2><span id="about-h2"></span></h2>
             </div>
         </div>
         <div class="container">
@@ -77,9 +75,8 @@
                         <i class="fas fa-baby-carriage"></i>
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;">Brand new father</span></h5>
-                        <p class="card-text">It is the most beautiful thing ever happened to me. Also the hardest task.
-                        </p>
+                        <h5 class="card-title"><span style="font-weight: bold;" id="card1-title"></span></h5>
+                        <p class="card-text" id="card1-text"></p>
                     </div>
                 </div>
             </div>
@@ -89,9 +86,8 @@
                         <i class="fas fa-eye"></i>
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;">Graphic designer</span></h5>
-                        <p class="card-text">I am a graphic designer for more than a decade. Still learning and sharing
-                            the experience.</p>
+                        <h5 class="card-title"><span style="font-weight: bold;" id="card2-title"></span></h5>
+                        <p class="card-text" id="card2-text"></p>
                     </div>
                 </div>
             </div>
@@ -101,49 +97,44 @@
                         <i class="fas fa-file-code"></i>
                     </span>
                     <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;">Developer candidate</span></h5>
-                        <p class="card-text">Currently in training and have a big appetite for Python. They are right,
-                            code is poetry.</p>
+                        <h5 class="card-title"><span style="font-weight: bold;" id="card3-title"></span></h5>
+                        <p class="card-text" id="card3-text"></p>
                     </div>
                 </div>
             </div>
         </div>
         <!-- About ends-->
         
-        <!--Portfolio starts-->
+        <!--Projects starts-->
         <a class="anchor" id="projects"></a>
         <div class="container" style="padding-top: 50px;">
             <div class="col-md-12">
-                <h2>Projects</h2>
+                <h2><span id="projects-h2"></span></h2>
             </div>
         </div>
         <div class="container">
             <div class="col-md-12 offset-md-1" style="margin-left: 0px;">
-                
                 <div class="row">
-        
                     <div class="col-md-6 col-lg-4 py-4">
                         <div class="gallery-container">
                             <img src="./Assets/img/sudoku.png" alt="Alt Name" class="image">
         
                             <div class="overlay">
                                 <p class="text p-2">
-                                    <span style="font-weight:bold">Sudoku Solver</span><br>
-                                    <span class="small">This is a C# console application for practicing
-                                        "Backtracking"</span>
+                                    <span style="font-weight:bold" id="project1-title"></span><br>
+                                    <span class="small" id="project1-text"></span>
                                 </p>
                             </div>
                         </div>
                     </div>
-
                     <div class="col-md-6 col-lg-4 py-4">
                         <div class="gallery-container">
                             <img src="./Assets/img/bringit.png" alt="Alt Name" class="image">
         
                             <div class="overlay">
                                 <p class="text p-2">
-                                    <span style="font-weight:bold">BringIt</span><br>
-                                    <span class="small">It started as an assignment but it is progressing well</span>
+                                    <span style="font-weight:bold" id="project2-title"></span><br>
+                                    <span class="small" id="project2-text"></span>
                                 </p>
                             </div>
                         </div>
@@ -155,8 +146,8 @@
         
                             <div class="overlay">
                                 <p class="text p-2">
-                                    <span style="font-weight:bold">HackerRank</span><br>
-                                    <span class="small">Trying to create a profile that I can show my coding abilities</span>
+                                    <span style="font-weight:bold" id="project3-title"></span><br>
+                                    <span class="small" id="project3-text"></span>
                                 </p>
                             </div>
                         </div>
@@ -165,7 +156,7 @@
                 </div>
             </div>
         </div>
-        <!--Portfolio ends-->
+        <!--Projects ends-->
 
         <!-- Contact starts -->
         <a class="anchor" id="contact"></a>
