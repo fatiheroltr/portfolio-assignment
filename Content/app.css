@@ -1,5 +1,6 @@
 body {
   font-family: 'Roboto Slab', serif !important;
+  color: rgba(39, 59, 82, 1) !important;
 }
 html {
   scroll-behavior: smooth;
@@ -29,4 +30,15 @@ html {
 
 .card {
   margin: 20px;
+}
+
+.custom-icon {
+  color: rgba(39, 59, 82, 1);
+}
+
+.custom-hr {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
 }
