@@ -1,243 +1,346 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Assignment</title>
     <!--CSS Section-->
-    <link rel="stylesheet" href="./Content/app.css">
-    <link rel="stylesheet" href="./Content/portfolio.css">
-    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./node_modules/@fortawesome/fontawesome-free/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap" rel="stylesheet">
-</head>
+    <link rel="stylesheet" href="/Content/app.css" />
+    <link
+      rel="stylesheet"
+      href="/node_modules/bootstrap/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="/node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700;900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-<body>
+  <body>
     <!-- Navigation -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-lg navbar-dark py-4 " id="custom-nav">
-            <div class="container">
-                <a class="navbar-brand" href="index.html">
-                    <img src="./Assets/img/logo.svg" width="30" height="40" class="d-inline-block align-top" alt=""
-                        loading="lazy" style="margin-right: 10px;"></a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse"
-                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+      <nav
+        class="navbar fixed-top navbar-expand-lg navbar-dark py-4"
+        id="custom-nav"
+      >
+        <div class="container">
+          <a class="navbar-brand" href="index.html">
+            <img
+              src="./Assets/img/logo.svg"
+              width="30"
+              height="40"
+              class="d-inline-block align-top"
+              alt=""
+              loading="lazy"
+              style="margin-right: 10px;"
+          /></a>
 
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#about"><i class="fas fa-fingerprint"></i><span id="menu-1"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projects"><i class="fas fa-code"></i><span id="menu-2"></span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#contact"><i class="fas fa-paper-plane"></i><span id="menu-3"></span></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#about"
+                  ><i class="fas fa-fingerprint"></i><span id="menu-1"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects"
+                  ><i class="fas fa-code"></i><span id="menu-2"></span
+                ></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact"
+                  ><i class="fas fa-paper-plane"></i><span id="menu-3"></span
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     </header>
     <!-- Main content -->
     <main>
-        <div class="jumbotron" id="custom-jumbo">
-            <div class="container">
-                <div class="col-md-8">
-                    <h1 class="display-4 " style="padding-top: 30px; color: white; font-weight: bold;"><span id="jumbo-1"></span>
-                    </h1>
-                    <p class="lead" style="color: white;"><span id="jumbo-2"></span></p>
-                    <hr class="my-4">
-                    <p style="color: white;"><span id="jumbo-3"></span></p>
-                    <a class="btn btn-primary btn-m" href="#about" role="button">learn more</a>
-                </div>
-                <div class="col-md-4">
-                    <img src="./Assets/img/profile.png" height="320px">
-                </div>
-            </div>
-        </div>
-
-        <!-- About starts -->
-        <a class="anchor" id="about"></a>
-        <div class="container" style="padding-top: 50px;">
-            <div class="col-md-12">
-                <h2><span id="about-h2"></span></h2>
-            </div>
-        </div>
+      <div class="jumbotron" id="custom-jumbo">
         <div class="container">
-            <div class="col-md-4">
-                <div class="card text-center" style="width: 18rem;">
-                    <span style="font-size: 4em; padding-top: 20px;" class="custom-icon">
-                        <i class="fas fa-baby-carriage"></i>
-                    </span>
-                    <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;" id="card1-title"></span></h5>
-                        <p class="card-text" id="card1-text"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center" style="width: 18rem;">
-                    <span style="font-size: 4em; padding-top: 20px;" class="custom-icon">
-                        <i class="fas fa-eye"></i>
-                    </span>
-                    <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;" id="card2-title"></span></h5>
-                        <p class="card-text" id="card2-text"></p>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card text-center" style="width: 18rem;">
-                    <span style="font-size: 4em; padding-top: 20px;" class="custom-icon">
-                        <i class="fas fa-file-code"></i>
-                    </span>
-                    <div class="card-body">
-                        <h5 class="card-title"><span style="font-weight: bold;" id="card3-title"></span></h5>
-                        <p class="card-text" id="card3-text"></p>
-                    </div>
-                </div>
-            </div>
+          <div class="col-md-8">
+            <h1
+              class="display-4"
+              style="padding-top: 30px; color: white; font-weight: bold;"
+            >
+              <span id="jumbo-1"></span>
+            </h1>
+            <p class="lead" style="color: white;"><span id="jumbo-2"></span></p>
+            <hr class="my-4" />
+            <p style="color: white;"><span id="jumbo-3"></span></p>
+            <a class="btn btn-primary btn-m" href="#about" role="button"
+              >learn more</a
+            >
+          </div>
+          <div class="col-md-4">
+            <img src="./Assets/img/profile.png" height="320px" />
+          </div>
         </div>
-        <!-- About ends-->
-        
-        <!--Projects starts-->
-        <a class="anchor" id="projects"></a>
-        <div class="container" style="padding-top: 50px;">
-            <div class="col-md-12">
-                <h2><span id="projects-h2"></span></h2>
-            </div>
-        </div>
-        <div class="container">
-            <div class="col-md-12 offset-md-1" style="margin-left: 0px;">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 py-4">
-                        <div class="gallery-container">
-                            <a href="https://sudoku-v1-2.fatiheroltr.repl.run/" target="_blank">
-                            <img src="./Assets/img/sudoku.png" alt="Alt Name" class="image"></a>
-        
-                            <div class="overlay">
-                                <p class="text p-2">
-                                    <span style="font-weight:bold" id="project1-title"></span><br>
-                                    <span class="small" id="project1-text"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 py-4">
-                        <div class="gallery-container">
-                            <a href="https://docs.google.com/document/d/1-OPS9vgGvSBG03KKJLJm7eeL03B31zpg8ocESg2lY5k/edit" target="_blank">
-                            <img src="./Assets/img/bringit.png" alt="Alt Name" class="image"></a>
-        
-                            <div class="overlay">
-                                <p class="text p-2">
-                                    <span style="font-weight:bold" id="project2-title"></span><br>
-                                    <span class="small" id="project2-text"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+      </div>
 
-                    <div class="col-md-6 col-lg-4 py-4">
-                        <div class="gallery-container">
-                            <a href="https://www.hackerrank.com/FatihErol" target="_blank">
-                            <img src="./Assets/img/hacker-rank.png" alt="Alt Name" class="image"></a>
-        
-                            <div class="overlay">
-                                <p class="text p-2">
-                                    <span style="font-weight:bold" id="project3-title"></span><br>
-                                    <span class="small" id="project3-text"></span>
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
+      <!-- About starts -->
+      <a class="anchor" id="about"></a>
+      <div class="container" style="padding-top: 50px;">
+        <div class="col-md-12">
+          <h2><span id="about-h2"></span></h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <span
+              style="font-size: 4em; padding-top: 20px;"
+              class="custom-icon"
+            >
+              <i class="fas fa-baby-carriage"></i>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="font-weight: bold;" id="card1-title"></span>
+              </h5>
+              <p class="card-text" id="card1-text"></p>
             </div>
+          </div>
         </div>
-        <!--Projects ends-->
-
-        <!-- Contact starts -->
-        <a class="anchor" id="contact"></a>
-        <div class="container" style="padding-top: 50px;">
-            <div class="col-md-12">
-                <h2>Contact</h2>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <span
+              style="font-size: 4em; padding-top: 20px;"
+              class="custom-icon"
+            >
+              <i class="fas fa-eye"></i>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="font-weight: bold;" id="card2-title"></span>
+              </h5>
+              <p class="card-text" id="card2-text"></p>
             </div>
+          </div>
         </div>
-        <div class="container justify-content-center">
-            <form>
-                <div class="form-group row">
-                    <label class="col-4 col-form-label" for="name">Name</label>
-                    <div class="col-8">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <i class="fa fa-address-card"></i>
-                                </div>
-                            </div>
-                            <input id="name" name="name" placeholder="First and Last name" type="text" class="form-control"
-                                required="required">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="email" class="col-4 col-form-label">Email</label>
-                    <div class="col-8">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <i class="fa fa-envelope"></i>
-                                </div>
-                            </div>
-                            <input id="email" name="email" placeholder="jane@janedoe.com" type="text" class="form-control"
-                                required="required">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="phone" class="col-4 col-form-label">Phone</label>
-                    <div class="col-8">
-                        <div class="input-group">
-                            <div class="input-group-prepend">
-                                <div class="input-group-text">
-                                    <i class="fa fa-phone-square"></i>
-                                </div>
-                            </div>
-                            <input id="phone" name="phone" placeholder="(___) ___ __/__" type="text" class="form-control">
-                        </div>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <label for="message" class="col-4 col-form-label">Message</label>
-                    <div class="col-8">
-                        <textarea id="message" name="message" cols="40" rows="4" class="form-control"
-                            required="required"></textarea>
-                    </div>
-                </div>
-                <div class="form-group row">
-                    <div class="offset-4 col-8">
-                        <button name="submit" type="submit" class="btn btn-primary">Submit</button>
-                    </div>
-                </div>
-            </form>
+        <div class="col-md-4">
+          <div class="card text-center" style="width: 18rem;">
+            <span
+              style="font-size: 4em; padding-top: 20px;"
+              class="custom-icon"
+            >
+              <i class="fas fa-file-code"></i>
+            </span>
+            <div class="card-body">
+              <h5 class="card-title">
+                <span style="font-weight: bold;" id="card3-title"></span>
+              </h5>
+              <p class="card-text" id="card3-text"></p>
+            </div>
+          </div>
         </div>
+      </div>
+      <!-- About ends-->
 
-        <!-- Contact ends -->
+      <!--Projects starts-->
+      <a class="anchor" id="projects"></a>
+      <div class="container" style="padding-top: 50px;">
+        <div class="col-md-12">
+          <h2><span id="projects-h2"></span></h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="col-md-12 offset-md-1" style="margin-left: 0px;">
+          <div class="row">
+            <div class="col-md-6 col-lg-4 py-4">
+              <div class="gallery-container">
+                <a
+                  href="https://sudoku-v1-2.fatiheroltr.repl.run/"
+                  target="_blank"
+                >
+                  <img
+                    src="./Assets/img/sudoku.png"
+                    alt="Alt Name"
+                    class="image"
+                /></a>
+
+                <div class="overlay">
+                  <p class="text p-2">
+                    <span style="font-weight: bold;" id="project1-title"></span
+                    ><br />
+                    <span class="small" id="project1-text"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 py-4">
+              <div class="gallery-container">
+                <a
+                  href="https://docs.google.com/document/d/1-OPS9vgGvSBG03KKJLJm7eeL03B31zpg8ocESg2lY5k/edit"
+                  target="_blank"
+                >
+                  <img
+                    src="./Assets/img/bringit.png"
+                    alt="Alt Name"
+                    class="image"
+                /></a>
+
+                <div class="overlay">
+                  <p class="text p-2">
+                    <span style="font-weight: bold;" id="project2-title"></span
+                    ><br />
+                    <span class="small" id="project2-text"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 py-4">
+              <div class="gallery-container">
+                <a href="https://www.hackerrank.com/FatihErol" target="_blank">
+                  <img
+                    src="./Assets/img/hacker-rank.png"
+                    alt="Alt Name"
+                    class="image"
+                /></a>
+
+                <div class="overlay">
+                  <p class="text p-2">
+                    <span style="font-weight: bold;" id="project3-title"></span
+                    ><br />
+                    <span class="small" id="project3-text"></span>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!--Projects ends-->
+
+      <!-- Contact starts -->
+      <a class="anchor" id="contact"></a>
+      <div class="container" style="padding-top: 50px;">
+        <div class="col-md-12">
+          <h2>Contact</h2>
+        </div>
+      </div>
+      <div class="container justify-content-center">
+        <form>
+          <div class="form-group row">
+            <label class="col-4 col-form-label" for="name">Name</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-address-card"></i>
+                  </div>
+                </div>
+                <input
+                  id="name"
+                  name="name"
+                  placeholder="First and Last name"
+                  type="text"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="email" class="col-4 col-form-label">Email</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-envelope"></i>
+                  </div>
+                </div>
+                <input
+                  id="email"
+                  name="email"
+                  placeholder="jane@janedoe.com"
+                  type="text"
+                  class="form-control"
+                  required="required"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="phone" class="col-4 col-form-label">Phone</label>
+            <div class="col-8">
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <i class="fa fa-phone-square"></i>
+                  </div>
+                </div>
+                <input
+                  id="phone"
+                  name="phone"
+                  placeholder="(___) ___ __/__"
+                  type="text"
+                  class="form-control"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label for="message" class="col-4 col-form-label">Message</label>
+            <div class="col-8">
+              <textarea
+                id="message"
+                name="message"
+                cols="40"
+                rows="4"
+                class="form-control"
+                required="required"
+              ></textarea>
+            </div>
+          </div>
+          <div class="form-group row">
+            <div class="offset-4 col-8">
+              <button name="submit" type="submit" class="btn btn-primary">
+                Submit
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <!-- Contact ends -->
     </main>
 
     <!-- Footer -->
     <footer>
-        <nav class="navbar navbar-expand-sm navbar-light bg-light" style="margin-top: 50px;">
-            <div class="mx-auto d-sm-flex d-block flex-sm-nowrap" style="padding: 15px;">
-                <div class="collapse navbar-collapse text-center">
-                    <h6>&copy; Copyright 2020 All rights reserved. By Fatih Erol</h6>
-                </div>
-            </div>
-        </nav>
+      <nav
+        class="navbar navbar-expand-sm navbar-light bg-light"
+        style="margin-top: 50px;"
+      >
+        <div
+          class="mx-auto d-sm-flex d-block flex-sm-nowrap"
+          style="padding: 15px;"
+        >
+          <div class="collapse navbar-collapse text-center">
+            <h6>&copy; Copyright 2020 All rights reserved. By Fatih Erol</h6>
+          </div>
+        </div>
+      </nav>
     </footer>
 
     <!--Custom JS Section-->
@@ -246,6 +349,5 @@
     <!--3rd Party Libraries-->
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-</body>
-
+  </body>
 </html>
